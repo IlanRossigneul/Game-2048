@@ -1,0 +1,227 @@
+.title{
+    font-size: 80px;
+    font-weight: bold;
+    margin: 10px;
+    display: block;
+    float: left;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+#scorecontainer{
+    display: block;
+    float: right;
+    margin: 10px;
+}
+.scorecontainer, .hscorecontainer, .movescontainer{
+    position: relative;
+    display: block;
+    background: #bbada0;
+    padding: 15px 25px;
+    font-size: 25px;
+    height: 25px;
+    line-height: 30px;
+    font-weight: bold;
+    border-radius: 3px;
+    color: white;
+    margin-top: 8px;
+    text-align: center;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.resetcontainer{
+    position: absolute;
+    margin: 10px;
+    top: 100px;
+    display: block;
+    float: left;
+}
+
+.button{
+    display: block;
+    background: #bbada0;
+    border-radius: 3px;
+    margin-left: 0px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    height: 40px;
+    width: 177px;
+    line-height: 35px;
+    cursor: pointer;
+    text-align: center;
+    float: left;
+    font-size: 16px;
+}
+
+.switch{
+    position: absolute;
+    top: 75px;
+    left: 27.5%;
+    transform: translate(-50%, -50%);  
+}
+
+input{
+    position: absolute;
+    left: -9999px;
+}
+
+label{
+    display: block;
+    position: relative;
+    margin: 20px;
+    padding: 15px 30px 15px 62px;
+    border: 3px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #bbada0;
+    white-space: nowrap;
+    cursor: pointer;
+    -moz-user-select: none;
+    transition: background-color .2s, box-shadow .2s;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+label::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    background-color: #fff;
+    left: 10px;
+    width: 32px;
+    border: 3px solid #fff;
+    border-radius: 100px;
+    transition: background-color .2s;
+}
+
+label:first-of-type{
+    transform: translateX(-40px);
+}
+
+label:last-of-type{
+    transform: translateX(40px);
+}
+
+input:checked + label{
+    background-color: #bbada0;
+}
+
+input:checked + label::before{
+    background-color: #bbada0;
+}
+
+.tips{
+    position: relative;
+    display: block;
+    top : 550px;
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: bold;
+    color: #bbada0;
+    text-align: center;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.endgame{
+    position: absolute;
+    top: -160px;
+    margin: -8px;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    background-color: #8f7a66;
+    color: #f9f6f2;
+    z-index: 4;
+    font-size: 2.5em;
+    display: table;
+    opacity: 0.92;
+}
+
+.endgame > p{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.gridcontainer{
+    display: grid;
+    grid-template-rows: repeat(4, 115px);
+    grid-template-columns: repeat(4, 115px);
+    position: absolute;
+    left: 50%;
+    margin-left: -230px;
+    background-color: #BBADA0;
+    border: solid 5px #BBADA0;
+    border-radius: 5px;
+}
+
+.empty{
+    height : 105px;
+    width: 105px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #CDC1B4;
+}
+
+.full{
+    text-align: center;
+    vertical-align: middle;
+    height : 105px;
+    line-height: 105px;
+    width: 105px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 55px;
+    font-weight: bold;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    -moz-user-select: none;
+}
+
+.tile-2{
+    background-color: #EEE4DA;
+}
+
+.tile-4{
+    background-color: #EDE0C8;
+}
+
+.tile-8{
+    background-color: #F2B179;
+}
+
+.tile-16{
+    background-color: #F59563;
+}
+
+.tile-32{
+    background-color: #F67C5F;
+}
+
+.tile-64{
+    background-color: #F65E3B;
+}
+
+.tile-128{
+    background-color: #EDCF72;
+    font-size: 45px;
+}
+
+.tile-256{
+    background-color: #EDCC61;
+    font-size: 45px;
+}
+
+.tile-512{
+    background-color: #EDC850;
+    font-size: 45px;
+}
+
+.tile-1024{
+    background-color: #EDC53F;
+    font-size: 35px;
+}
+
+.tile-2048{
+    background-color: #EDC22E;
+    font-size: 35px;
+}
