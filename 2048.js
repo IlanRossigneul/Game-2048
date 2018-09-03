@@ -357,7 +357,7 @@
             pointsDisplay(pointsAdded);
             if (Number(valueTile) == 2048) {
                 gameOver = true;
-                $('.endgame').html("<p>WELL DONE, bro !<br><b>Your Score: " + points + " in " + moves + " moves</b></p>");
+                $('.endgame').html("<p>WELL DONE !<br><b>Your Score: " + points + " in " + moves + " moves</b></p>");
                 $('.endgame').animate({
                     top: "200px"
                 }, 600);
@@ -419,7 +419,7 @@
         function endGame() {
             
             gameOver = true;
-            $('.endgame').html("<p>GAME OVER ! Sucker !<br><b>Your Score: " + points + " in " + moves + " moves</b></p>");
+            $('.endgame').html("<p>GAME OVER !<br><b>Your Score: " + points + " in " + moves + " moves</b></p>");
             $('.endgame').animate({
                 top: "200px"
             }, 600);
